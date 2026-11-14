@@ -1,6 +1,6 @@
 # Awesome-Employee-Well-Being-Workplace-Culture
 
-# Top Employee Well-being & Workplace Culture Ecosystem
+## Top Employee Well-being & Workplace Culture Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Burnout Detection, Wellbeing Check-ins & Culture Analytics*  
