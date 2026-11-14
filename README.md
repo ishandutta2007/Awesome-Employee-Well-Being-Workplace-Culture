@@ -8,7 +8,7 @@
 
 <p align="left">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture?style=flat-square" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture?style=flat-square" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture?style=flat-square" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Employee-Well-Being-Workplace-Culture/pulls"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square" alt="Contributions Welcome" /></a>
   <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License: CC0-1.0" /></a>
@@ -66,9 +66,9 @@ Commercial tools providing turn-key engagement, validated clinical mental health
 
 ## 💻 Open-Source Projects & Developer Tooling
 
-Community-driven open-source software, telemetry tools, and developer datasets for organizations demanding complete data sovereignty, zero per-seat licensing, and automated risk scoring. Sorted by GitHub star count:
+Community-driven open-source software, telemetry tools, and developer datasets for organizations demanding complete data sovereignty, zero per-seat licensing, and automated risk scoring. Sorted by GitHub Stars_Count:
 
-| Project | Star Count 🌟 | Primary Focus & Description 🛠️ |
+| Project | Stars_Count 🌟 | Primary Focus & Description 🛠️ |
 |:---|:---|:---|
 | **[LimeSurvey](https://github.com/LimeSurvey/LimeSurvey)** | [![Stars](https://img.shields.io/github/stars/LimeSurvey/LimeSurvey?style=social&color=white)](https://github.com/LimeSurvey/LimeSurvey/stargazers) | **Enterprise survey engine with 19+ pre-built employee well-being questionnaires.** Supports Work-Life Balance, Workplace Stress, eNPS, and Health & Safety across 80+ languages and 28+ question types. Self-hostable via Docker/PHP with full MySQL/PostgreSQL persistence. |
 | **[awesome-mental-health](https://github.com/dreamingechoes/awesome-mental-health)** | [![Stars](https://img.shields.io/github/stars/dreamingechoes/awesome-mental-health?style=social&color=white)](https://github.com/dreamingechoes/awesome-mental-health/stargazers) | **Curated collection of mental health guides, workplace crisis hotlines, and articles** specifically tailored for software engineers and knowledge workers navigating anxiety, imposter syndrome, and engineering burnout. |
@@ -115,7 +115,7 @@ Contributions to this ecosystem list are warmly welcomed! 🌟
    - Tool/Project Name and official link 🔗
    - Clear, objective 1–2 sentence description of functionality
    - Starting pricing tier and exact free tier/trial limits (for SaaS products)
-   - GitHub stars badge (`style=social&color=white`) linking to the stargazers page (for open-source tools)
+   - GitHub_Stars_Badge (`style=social&color=white`) linking to the stargazers page (for open-source tools)
 4. Submit a Pull Request with a clear description of the addition! 🎉
 
 ---
