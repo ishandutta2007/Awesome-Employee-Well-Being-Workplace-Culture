@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Dynamic Animated Grid Background -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.6" />
+    </pattern>
+
+    <style>
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.35; }
+        50% { transform: scale(1.18) translate(25px, -15px); opacity: 0.65; }
+      }
+      @keyframes pulseOrb2 {
+        0%, 100% { transform: scale(1.1) translate(0px, 0px); opacity: 0.4; }
+        50% { transform: scale(0.95) translate(-30px, 20px); opacity: 0.7; }
+      }
+      @keyframes floatCard1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatCard2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes waveFlow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -400; }
+      }
+      @keyframes pulseHeart {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+      }
+      .orb-1 {
+        animation: pulseOrb 8s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .orb-2 {
+        animation: pulseOrb2 10s ease-in-out infinite;
+        transform-origin: 1000px 300px;
+      }
+      .card-1 {
+        animation: floatCard1 6s ease-in-out infinite;
+      }
+      .card-2 {
+        animation: floatCard2 7s ease-in-out infinite 1s;
+      }
+      .flow-wave {
+        stroke-dasharray: 12, 12;
+        animation: waveFlow 18s linear infinite;
+      }
+      .heart-pulse {
+        animation: pulseHeart 2.5s ease-in-out infinite;
+        transform-origin: 600px 70px;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Background Layers -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" fill="url(#grid)" />
+
+  <!-- 2. Dynamic Animated Background Glowing Orbs -->
+  <g class="orb-1">
+    <circle cx="220" cy="110" r="140" fill="#6366f1" opacity="0.35" filter="url(#glow)" />
+    <circle cx="280" cy="160" r="80" fill="#06b6d4" opacity="0.25" filter="url(#glow)" />
+  </g>
+  <g class="orb-2">
+    <circle cx="1000" cy="310" r="150" fill="#a855f7" opacity="0.3" filter="url(#glow)" />
+    <circle cx="920" cy="260" r="90" fill="#ec4899" opacity="0.25" filter="url(#glow)" />
+  </g>
+
+  <!-- Dynamic Wave Lines in Background -->
+  <path class="flow-wave" d="M -50,340 C 250,280 450,380 750,310 C 950,260 1150,330 1250,300" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.4" />
+  <path class="flow-wave" d="M -50,365 C 200,410 500,320 800,370 C 1000,410 1150,350 1250,360" fill="none" stroke="#818cf8" stroke-width="2" opacity="0.3" />
+
+  <!-- 3. Dynamic Side Metric Cards (Positioned lower on sides so title in center remains crisp) -->
+  <g class="card-1" transform="translate(60, 240)" filter="url(#cardShadow)">
+    <rect width="210" height="96" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <circle cx="36" cy="38" r="14" fill="#10b981" fill-opacity="0.2" />
+    <circle cx="36" cy="38" r="7" fill="#10b981" />
+    <text x="62" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="0.5">TEAM WELLBEING</text>
+    <text x="62" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#f8fafc">94.2% Optimal</text>
+    <rect x="24" y="68" width="162" height="6" rx="3" fill="#334155" />
+    <rect x="24" y="68" width="138" height="6" rx="3" fill="#10b981" />
+  </g>
+
+  <g class="card-2" transform="translate(930, 240)" filter="url(#cardShadow)">
+    <rect width="210" height="96" rx="14" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="1.5" />
+    <circle cx="36" cy="38" r="14" fill="#6366f1" fill-opacity="0.2" />
+    <circle cx="36" cy="38" r="7" fill="#818cf8" />
+    <text x="62" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#94a3b8" letter-spacing="0.5">BURNOUT RISK</text>
+    <text x="62" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="800" fill="#38bdf8">Early Warning Safe</text>
+    <rect x="24" y="68" width="162" height="6" rx="3" fill="#334155" />
+    <rect x="24" y="68" width="35" height="6" rx="3" fill="#38bdf8" />
+  </g>
+
+  <!-- 4. Top Tagline Pill -->
+  <g transform="translate(425, 42)">
+    <rect width="350" height="34" rx="17" fill="#1e293b" fill-opacity="0.9" stroke="url(#accentGrad)" stroke-width="1.2" />
+    <circle cx="22" cy="17" r="5" fill="#10b981" />
+    <text x="36" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0" letter-spacing="0.8">CURATED OPEN ECOSYSTEM &bull; 2026 EDITION</text>
+  </g>
+
+  <!-- 5. Main Foreground Title & Subtitle (Unobstructed & High Contrast) -->
+  <g id="main-content">
+    <text x="600" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="url(#textGrad)" letter-spacing="-1">
+      Employee Well-being &amp; Workplace Culture
+    </text>
+
+    <text x="600" y="190" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#cbd5e1" letter-spacing="0.2">
+      SaaS Platforms &bull; Open-Source Telemetry &bull; Burnout Detection &bull; Culture Analytics
+    </text>
+  </g>
+
+  <!-- 6. Bottom Feature Pills / Badges in Foreground -->
+  <g transform="translate(290, 245)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="145" height="34" rx="17" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1" />
+    <text x="72" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#38bdf8">&#x1F4CA; Pulse Surveys</text>
+
+    <!-- Pill 2 -->
+    <rect x="158" y="0" width="155" height="34" rx="17" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1" />
+    <text x="235" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#f43f5e">&#x1F6E1;&#xFE0F; Burnout Alerts</text>
+
+    <!-- Pill 3 -->
+    <rect x="326" y="0" width="145" height="34" rx="17" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1" />
+    <text x="398" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#10b981">&#x1F9E0; Mental Health</text>
+
+    <!-- Pill 4 -->
+    <rect x="484" y="0" width="145" height="34" rx="17" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1" />
+    <text x="556" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#c084fc">&#x1F510; Zero-Knowledge</text>
+  </g>
+
+  <!-- 7. Bottom Border Accent Line -->
+  <rect x="0" y="415" width="1200" height="5" fill="url(#accentGrad)" />
+</svg>
