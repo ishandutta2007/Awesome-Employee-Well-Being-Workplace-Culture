@@ -66,7 +66,7 @@ Commercial tools providing turn-key engagement, validated clinical mental health
 
 ## 💻 Open-Source Projects & Developer Tooling
 
-Community-driven open-source software, telemetry tools, and developer datasets for organizations demanding complete data sovereignty, zero per-seat licensing, and automated risk scoring. Sorted by GitHub Stars_Count:
+Community-driven open-source software, telemetry tools, and developer datasets for organizations demanding complete data sovereignty, zero per-seat licensing, and automated risk scoring. Sorted by GitHub_Stars_Count:
 
 | Project | Stars_Count 🌟 | Primary Focus & Description 🛠️ |
 |:---|:---|:---|
